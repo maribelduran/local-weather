@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FreeCodeCamp: Show the Local Weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show the Local Weather</title>
+<meta property="og:url" content="https://s.codepen.io/maribelduran/debug/mAEwRZ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Show the Local Weather" />
+  <meta property="og:description" content="Shows the weather of your current location. Check out the animation!  " />
+ <meta property="og:image" content="http://res.cloudinary.com/maribelduran/image/upload/v1478366181/SFWeather_xsmall_sjgcap.png" />
+<meta property="fb:app_id" content="366229900379569" />
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <body>
+  <div class='container-fluid'>
+    <div class="row nav">
+      <div class="col-xs-6">
+        <a href="https://s.codepen.io/maribelduran/debug/mAEwRZ">
+          <button id="refresh" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-refresh"</span></button>  
+      </a>
+        </div>
+      <div class="col-xs-6 text-right">
+        <input id="toggleTempScale" checked type="checkbox" data-toggle="toggle" data-on="&#176F" data-off="&#176C" data-width="40" data-height="40" data-size='small' data-onstyle="default">
+      </div>
+    </div>
+
+    <div id="content">
+      <div id="loader">Loading...</div>
+      <div id="currentCondition" class="row">
+        <h1 id="city"></h1>
+        <div id="currentIconContainer" class="col-xs-6">
+          <canvas id="current_icon" width="100px">
+    </div>
+    <div id="current" class="col-xs-6">
+      <p class="temperature"><strong></strong></p>
+      <p class="maxMinTemp"></p>
+      <p class="summary"></p>
+    </div>
+       
+  </div>
+  <button id="toggleExtraDays">Show Less</button>
+
+  <div id="extraDays" class="row">
+      <hr>
+      <div id='day2' class='col-xs-4'>
+      <p class='weekDay'></p>
+      <canvas id="day2_icon" width="100" height="100"></canvas>
+          <p class='maxMinTemp'></p>
+        </div>
+        <div id='day3' class='col-xs-4'>
+          <p class='weekDay'></p>
+          <canvas id="day3_icon" width="100" height="100"></canvas>
+          <p class='maxMinTemp'></p>
+        </div>
+        <div id='day4' class='col-xs-4'>
+          <p class='weekDay'></p>
+          <canvas id="day4_icon" width="100" height="100"></canvas>
+          <p class='maxMinTemp'></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="error">
+      <p id="err_message"></p>
+      <canvas id="error_rain_icon" width="100px">
+    </div> 
+  <div id="footer">
+ <div>Coded by <a href="https://www.linkedin.com/in/maribel-duran-1766a773" target="_blank">Maribel Duran</a>
+  </div>
+<div>Inspired by <a href="http://darkskyapp.github.io/skycons/" target="_blank">Skycons Library</a></div>
+<div>Powered by <a href="https://darksky.net/poweredby/" target="_blank">Dark Sky</a>
+  </div>   
+</div>
+</div>  
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src='https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js'></script>
+  <script src='https://rawgit.com/darkskyapp/skycons/master/skycons.js'></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

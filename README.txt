@@ -1,0 +1,1 @@
+Shows the weather of your current location using geolocation and Dark Sky Api. Check out the animation!
