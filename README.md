@@ -2,10 +2,12 @@
 
 Shows the weather of the user's current location in both Fahrenheit and Celcius. Uses HTML5 Geolocation API to get the user's location and Dark Sky API for the weather conditions. Built using Javascript, jQuery, HTML5, CSS, and Bootstrap.
 
+See live project here: https://codepen.io/maribelduran/pen/mAEwRZ 
+
 
 ## Challenge Details from FreeCodeCamp
 
-Objective: Build a CodePen.io app that is functionally similar to this: http://codepen.io/FreeCodeCamp/full/bELRjV.
+Objective: Build a CodePen.io app that is functionally similar to this.
 
 Rule #1: Don't look at the example project's code. Figure it out for yourself.
 
